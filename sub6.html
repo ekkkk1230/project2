@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수원문화재단</title>
+    <link rel="stylesheet" href="./css/sub6.css">
+    <link rel="stylesheet" href="./css/sub6_mq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+    <script src="./js/jquery-1.7.2.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script> 
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/jquery.twbsPagination.js"></script>
+    <script src="./js/sub.js"></script>
+    <script src="https://kit.fontawesome.com/b51af6ee40.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="top_nav">
+                <div id="top_nav_contents">
+                    <div class="news_wrap">수원뉴스
+                        <ul>
+                            <li><a href="#none">수원시 북수원도서관, 이순원 작가 전시회 개최</a></li>
+                            <li><a href="#none">'포스트 코비드 시대', 우리 아이들 어떻게 키워야 하나?</a></li>
+                            <li><a href="#none">"엄마! 아빠! 우리 숲 속에 가서 놀아요!"</a></li>
+                            <li><a href="#none">이번 주말, 여러분을 '숲속의 파티'로 초대합니다.</a></li>
+                        </ul>
+                    </div>
+                    <div class="link">
+                        <ul>
+                            <li><a href="#none">수원소식</a></li>
+                            <li><a href="#none">응답소</a></li>
+                            <li><a href="#none">정보공개</a></li>
+                            <li><a href="#none">분야별정보</a></li>
+                        </ul>
+                    </div>
+                    <div class="login">
+                        <ul>
+                            <li><a href="sub4.html">로그인&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a href="#none">회원가입</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="logo">
+                <div class="logo_contents">
+                    <div class="logo">
+                        <h1>
+                            <a href="index.html"><img src="./img/logo.png" width="300" height="75" alt="logo"></a>
+                            <span>수원문화재단</span>
+                        </h1>
+                    </div>
+                    <div class="search">
+                        <form>
+                            <input type="text" placeholder="검색어를 입력해주세요.">
+                            <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </form>
+                    </div>
+                    <div class="hidden hamburger">
+                        <div class="line n1"></div>
+                        <div class="line n2"></div>
+                        <div class="line n3"></div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="depth1">
+                    <li><a href="sub1.html">수원화성관광</a>
+                        <div class="sub_bg">
+                            <div class="depth2Wrap img0">
+                                <ul class="depth2">
+                                    <li><a href="sub1.html">관람안내</a></li>
+                                    <li><a href="#none">문화관광해설</a></li>
+                                    <li><a href="#none">수원화성 소개</a></li>
+                                    <li><a href="#none">화성행궁 소개</a></li>
+                                    <li><a href="#none">화령전 소개</a></li>
+                                    <li><a href="#none">화성행궁 야간개장</a></li>
+                                    <li><a href="#none">수원화성 공연·체험</a></li>
+                                    <li><a href="#none">수원호스텔</a></li>
+                                    <li><a href="#none">행궁동 왕의 골목여행</a></li>
+                                    <li><a href="#none">문턱 없는 가이드북</a></li>
+                                    <li><a href="#none">주변명소안내</a></li>
+                                    <li><a href="#none">여행꼭지점카페</a></li>
+                                    <li><a href="#none">TV 속 수원화성</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="sub2.html">축제·행사·교육</a>
+                        <div class="sub_bg">
+                            <div class="depth2Wrap img1">
+                                <ul class="depth2">
+                                    <li><a href="sub2.html">수원화성문화재</a></li>
+                                    <li><a href="#none">정조대왕능행차</a></li>
+                                    <li><a href="#none">세계유산축전</a></li>
+                                    <li><a href="#none">미디어아트쇼</a></li>
+                                    <li><a href="#none">수원문화재야행</a></li>
+                                    <li><a href="#none">수원연극축제</a></li>
+                                    <li><a href="#none">수원재즈페스티벌</a></li>
+                                    <li><a href="#none">행사정보</a></li>
+                                    <li><a href="#none">교육정보</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="sub5.html">문화사업</a>
+                        <div class="sub_bg">
+                            <div class="depth2Wrap img2">
+                                <ul class="depth2">
+                                    <li><a href="sub5.html">문화사업 안내</a></li>
+                                    <li><a href="#none">지원사업 안내</a></li>
+                                    <li><a href="#none">문화도시 수원</a></li>
+                                    <li><a href="#none">문화기부 SSAC</a></li>
+                                    <li><a href="#none">수원문화지도</a></li>
+                                    <li><a href="#none">아트리움 공연정보</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="sub6.html">문화시설</a>
+                        <div class="sub_bg">
+                            <div class="depth2Wrap img3">
+                                <ul class="depth2">
+                                    <li><a href="sub6.html">수원SK아트리움</a></li>
+                                    <li><a href="#none">수원제1야외음악당</a></li>
+                                    <li><a href="#none">수원제2야외음악당</a></li>
+                                    <li><a href="#none">수원전통문화관</a></li>
+                                    <li><a href="#none">한옥기술전시관</a></li>
+                                    <li><a href="#none">화서사랑채</a></li>
+                                    <li><a href="#none">화홍사랑채</a></li>
+                                    <li><a href="#none">무형문화재전수회관</a></li>
+                                    <li><a href="#none">행궁길갤러리</a></li>
+                                    <li><a href="#none">111CM</a></li>
+                                    <li><a href="#none">수원미디어센터</a></li>
+                                    <li><a href="#none">푸른지대창작샘터</a></li>
+                                    <li><a href="#none">지동예술샘터</a></li>
+                                    <li><a href="#none">실험목장 AGIT</a></li>
+                                    <li><a href="#none">슬기샘도서관</a></li>
+                                    <li><a href="#none">지혜샘도서관</a></li>
+                                    <li><a href="#none">바른샘도서관</a></li>
+                                    <li><a href="#none">시설물 대관 안내</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="sub3.html">열린공간</a>
+                        <div class="sub_bg">
+                            <div class="depth2Wrap img4">
+                                <ul class="depth2">
+                                    <li><a href="#none">재단소식</a></li>
+                                    <li><a href="#none">프레스룸</a></li>
+                                    <li><a href="#none">자료실</a></li>
+                                    <li><a href="#none">통합 온라인접수</a></li>
+                                    <li><a href="sub3.html">열린의견</a></li>
+                                    <li><a href="#none">공공데이터개방</a></li>
+                                    <li><a href="#none">경영공시</a></li>
+                                    <li><a href="#none">부패·공익 신고센터</a></li>
+                                    <li><a href="#none">반부패 청렴활동</a></li>
+                                    <li><a href="#none">인인화락웹진</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="sub7.html">재단소개</a>
+                        <div class="sub_bg">
+                            <div class="depth2Wrap img5">
+                                <ul class="depth2">
+                                    <li><a href="sub7.html">인사말</a></li>
+                                    <li><a href="#none">비전 및 경영전략</a></li>
+                                    <li><a href="#none">연혁 및 설립배경</a></li>
+                                    <li><a href="#none">조직 및 담당업무</a></li>
+                                    <li><a href="#none">CI소개</a></li>
+                                    <li><a href="#none">재단 오시는 길</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="m_nav hidden">
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="검색어를 입력해주세요.">
+                        <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </form>
+                </div>
+                <ul class="m_nav_depth1">
+                    <li><a href="#none">수원화성관광</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="m_nav_depth2">
+                            <li><a href="sub1.html">관람안내</a></li>
+                            <li><a href="#none">문화관광해설</a></li>
+                            <li><a href="#none">수원화성 소개</a></li>
+                            <li><a href="#none">화성행궁 소개</a></li>
+                            <li><a href="#none">화령전 소개</a></li>
+                            <li><a href="#none">화성행궁 야간개장</a></li>
+                            <li><a href="#none">수원화성 공연·체험</a></li>
+                            <li><a href="#none">수원호스텔</a></li>
+                            <li><a href="#none">행궁동 왕의 골목여행</a></li>
+                            <li><a href="#none">문턱 없는 가이드북</a></li>
+                            <li><a href="#none">주변명소안내</a></li>
+                            <li><a href="#none">여행꼭지점카페</a></li>
+                            <li><a href="#none">TV 속 수원화성</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">축제·행사·교육</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="m_nav_depth2">
+                            <li><a href="sub2.html">수원화성문화재</a></li>
+                            <li><a href="#none">정조대왕능행차</a></li>
+                            <li><a href="#none">셰계유산축전</a></li>
+                            <li><a href="#none">미디어아트쇼</a></li>
+                            <li><a href="#none">수원문화재야행</a></li>
+                            <li><a href="#none">수원연극축제</a></li>
+                            <li><a href="#none">수원재즈페스티벌</a></li>
+                            <li><a href="#none">행사정보</a></li>
+                            <li><a href="#none">교육정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">문화사업</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="m_nav_depth2">
+                            <li><a href="sub5.html">문화사업 안내</a></li>
+                            <li><a href="#none">지원사업 안내</a></li>
+                            <li><a href="#none">문화도시 수원</a></li>
+                            <li><a href="#none">문화기부 SSAC</a></li>
+                            <li><a href="#none">수원문화지도</a></li>
+                            <li><a href="#none">아트리움 공연정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">문화시설</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="m_nav_depth2">
+                            <li><a href="sub6.html">수원SK아트리움</a></li>
+                            <li><a href="#none">수원제1야외음악당</a></li>
+                            <li><a href="#none">수원제2야외음악당</a></li>
+                            <li><a href="#none">수원전통문화관</a></li>
+                            <li><a href="#none">한옥기술전시관</a></li>
+                            <li><a href="#none">화서사랑채</a></li>
+                            <li><a href="#none">화홍사랑채</a></li>
+                            <li><a href="#none">무형문화재전수회관</a></li>
+                            <li><a href="#none">행궁길갤러리</a></li>
+                            <li><a href="#none">111CM</a></li>
+                            <li><a href="#none">수원미디어센터</a></li>
+                            <li><a href="#none">푸른지대창작샘터</a></li>
+                            <li><a href="#none">지동예술샘터</a></li>
+                            <li><a href="#none">실험목장 AGIT</a></li>
+                            <li><a href="#none">슬기샘도서관</a></li>
+                            <li><a href="#none">지혜샘도서관</a></li>
+                            <li><a href="#none">바른샘도서관</a></li>
+                            <li><a href="#none">시설물 대관 안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">열린공간</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="m_nav_depth2">
+                            <li><a href="#none">재단소식</a></li>
+                            <li><a href="#none">프레스룸</a></li>
+                            <li><a href="#none">자료실</a></li>
+                            <li><a href="#none">통합 온라인접수</a></li>
+                            <li><a href="sub3.html">열린의견</a></li>
+                            <li><a href="#none">공공데이터개방</a></li>
+                            <li><a href="#none">경영공시</a></li>
+                            <li><a href="#none">부패·공익 신고센터</a></li>
+                            <li><a href="#none">반부패 청렴활동</a></li>
+                            <li><a href="#none">인인화락웹진</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">재단소개</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="m_nav_depth2">
+                            <li><a href="sub7.html">인사말</a></li>
+                            <li><a href="#none">비전 및 경영전략</a></li>
+                            <li><a href="#none">연혁 및 설립배경</a></li>
+                            <li><a href="#none">조직 및 담당업무</a></li>
+                            <li><a href="#none">CI소개</a></li>
+                            <li><a href="#none">재단 오시는 길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <div class="bg"></div>
+            <div class="page_info">
+                <div class="title_bg">
+                    <div class="page_title">
+                        <h2>수원SK아트리움</h2>
+                    </div>
+                    <div class="page">
+                        <p>HOME &gt; 문화시설 &gt; 수원SK아트리움 &gt; 소개</p>
+                    </div>
+                </div>
+                <div class="page_link_info">
+                    <div class="page_link_info_width">
+                        <div class="home"><i class="fa-solid fa-house-chimney"></i></div>
+                        <ul class="page_info_depth page_info_depth1">
+                            <li>
+                                <a href="#none">문화시설
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="sub1.html">수원화성관광</a></li>
+                                    <li><a href="sub2.html">축제·행사·교육</a></li>
+                                    <li><a href="sub5.html">문화사업</a></li>
+                                    <li><a href="sub6.html">문화시설</a></li>
+                                    <li><a href="sub3.html">열린공간</a></li>
+                                    <li><a href="sub7.html">재단소개</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="page_info_depth page_info_depth2">
+                            <li>
+                                <a href="#none">수원SK아트리움
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="sub6.html">수원SK아트리움</a></li>
+                                    <li><a href="#none">수원제1야외음악당</a></li>
+                                    <li><a href="#none">수원제2야외음악당</a></li>
+                                    <li><a href="#none">수원전통문화관</a></li>
+                                    <li><a href="#none">한옥기술전시관</a></li>
+                                    <li><a href="#none">화서사랑채</a></li>
+                                    <li><a href="#none">화홍사랑채</a></li>
+                                    <li><a href="#none">무형문화재전수회관</a></li>
+                                    <li><a href="#none">행궁길갤러리</a></li>
+                                    <li><a href="#none">111CM</a></li>
+                                    <li><a href="#none">수원미디어센터</a></li>
+                                    <li><a href="#none">푸른지대창작샘터</a></li>
+                                    <li><a href="#none">지동예술샘터</a></li>
+                                    <li><a href="#none">실험목장 AGIT</a></li>
+                                    <li><a href="#none">슬기샘도서관</a></li>
+                                    <li><a href="#none">지혜샘도서관</a></li>
+                                    <li><a href="#none">바른샘도서관</a></li>
+                                    <li><a href="#none">시설물 대관 안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="page_info_depth page_info_depth3">
+                            <li><a href="#none">소개
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="sub6.html">소개</a></li>
+                                    <li><a href="#none">공지</a></li>
+                                    <li><a href="#none">행사</a></li>
+                                    <li><a href="#none">시설물 대관안내</a></li>
+                                    <li><a href="#none">사이버투어</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contents_wrap">
+                <div class="contents">
+                    <div class="photo_wrap">
+                        <div class="photo">
+                            <ul>
+                                <li><img src="./img/sub6.jpg" width="1463" alt="제59회 수원화성문화재1"></li>
+                                <li><img src="./img/sub6_2.jpg" width="1463" alt="제59회 수원화성문화재2"></li>
+                                <li><img src="./img/sub6_3.jpg" width="1463" alt="제59회 수원화성문화재3"></li>
+                                <li><img src="./img/sub6_4.jpg" width="1463" alt="제59회 수원화성문화재4"></li>
+                                <li><img src="./img/sub6_5.jpg" width="1463" alt="제59회 수원화성문화재5"></li>
+                            </ul>
+                        </div>
+                        <div class="photo_control">
+                            <div class="photo_arrow">
+                                <i class="fa-solid fa-angle-left prev_pt"></i>
+                                <i class="fa-solid fa-play play_pt"></i>
+                                <i class="fa-solid fa-pause stop_pt"></i>
+                                <i class="fa-solid fa-angle-right next_pt"></i>
+                            </div>
+                            <div class="photo_number">
+                                <p class="now">1/5</p>
+                                <p>2/5</p>
+                                <p>3/5</p>
+                                <p>4/5</p>
+                                <p>5/5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artrium_info">
+                        <h2>열린무대, 열린문화! 문화도시 수원의 새로운 길이 열립니다. <br>수원의 위상에 걸맞은 수준 높은 문화예술을 선사하는 <span>수원SK아트리움</span>입니다.</h2>
+                        <p>
+                            수원SK아트리움은 고품격 문화예술 프로그램을 운영하여 수원시민의 문화향유 확대를 위해 건립한 전문공연장입니다. 최상의 무대 시스템과 최적의 환경을 갖춘 950석 규모의 대극장과 300석의 소극장으로 구성되어 있으며, 야외공연장과 카페테리아, 다목적 연습실, 교육공간 등으로 구성되어 있습니다. 양질의 공연과 문화예술 교육 프로그램 운영으로 시민과 적극 소통하고, 예술가-관객-공연장이 함께 발전할 수 있는 창의적 예술 공간으로 발전하고자 합니다.
+                        </p>
+                        <div class="btn">
+                            <button>홈페이지 바로가기 <i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="artrium_info_table">
+                        <article>
+                            <div class="table_title">
+                                <div class="line"></div>
+                                <h2>시설 안내</h2>
+                            </div>
+                            <div class="table_wrap">
+                                <div class="table_item">
+                                    <h3>시설개요</h3>
+                                    <table>
+                                        <tr>
+                                            <th class="width25">주소</th>
+                                            <td>수원시 장안구 이목로 24-25 (정자동)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>면적</th>
+                                            <td>대지면적 : 39,000.00㎡ / 연면적 : 14,997.84㎡</td>
+                                        </tr>
+                                        <tr>
+                                            <th>수용인원</th>
+                                            <td>대공연장 : 950석, 소공연장 : 300석</td>
+                                        </tr>
+                                        <tr>
+                                            <th>비고</th>
+                                            <td>지상3층, 지하2층</td>
+                                        </tr>
+                                        <tr>
+                                            <th>주관</th>
+                                            <td>수원화성문화제 추진위원회, 수원문화재단</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="table_item">
+                                    <h3>층별안내</h3>
+                                    <table>
+                                        <tr>
+                                            <th class="width25">층</th>
+                                            <th class="width36">소공연장</th>
+                                            <th class="width36">대공연장</th>
+                                        </tr>
+                                        <tbody>
+                                            <tr>
+                                                <th>3층</th>
+                                                <td>수원시립합창단</td>
+                                                <td>2층 객석</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2층</th>
+                                                <td>수원문화재단 공연사업부, 수원시립교향악단</td>
+                                                <td>1층 객석, 로비, 카페테리아</td>
+                                            </tr>
+                                            <tr>
+                                                <th>1층</th>
+                                                <td>객석, 로비, 아이러브맘카페, 공연자 대기실</td>
+                                                <td>공연자 대기실</td>
+                                            </tr>
+                                            <tr>
+                                                <th>지하 1층</th>
+                                                <td colspan="2">지하주차장</td>
+                                            </tr>
+                                            <tr>
+                                                <th>지하 2층</th>
+                                                <td></td>
+                                                <td>공연 연습실</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table_item">
+                                    <h3>문의</h3>
+                                    <table>
+                                        <tr>
+                                            <th class="width25">대표 전화번호</th>
+                                            <td>031-250-5300</td>
+                                        </tr>
+                                        <tr>
+                                            <th>대표 팩스번호</th>
+                                            <td>031-250-5349</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="information">
+                                    <div class="infor_item1">
+                                        <h3>대공연장 소개</h3>
+                                        <p>
+                                            수원SK아트리움의 메인홀인 대공연장은 다목적홀의 기능을 충족하면서도 고른 반사음과 적절한 잔향시간으로 최상의 음향시스템을 구축하였습니다. 또한 950석 규모의 객석은 충분한 내부공간의 확보로 관람객들이 쾌적한 분위기에서 공연을 즐길 수 있도록 설계되었습니다. 음악회, 오페라, 연극, 뮤지컬, 무용, 대중음악 등 다양한 형태의 공연예술 장르를 만나보실 수 있습니다.
+                                        </p>
+                                    </div>
+                                    <div class="infor_item2">
+                                        <h3>소공연장 소개</h3>
+                                        <p>
+                                            300석의 소공연장은 실내악, 연극, 어린이극, 개인 발표회 등 작은 규모의 공연에 적합한 공연장입니다. 무대와 객석이 하나가 되는 아담한 사이즈에 큐빅 형태의 벽체의 높이를 달리하여 시각적 역동감과 음 에너지의 확산을 유도하였습니다.
+                                        </p>
+                                    </div>
+                                    <div class="infor_item3">
+                                        <h3>아이러브맘 카페 소개</h3>
+                                        <p>
+                                            영유아(36개월 이하)와 엄마가 함께 놀이 등 프로그램에 참여하는 시설입니다. 영유아와 부모를 대상으로 한 놀이지도 프로그램 운영 이밖에 영유아 발달 지원을 위한 다양한 정기프로그램 진행합니다.
+                                            <br><span>※ 아이러브맘카페는 수원시육아종합지원센터(031-268-0989)에서 운영합니다. <b>평일(09:00~17:00)</b></span>
+                                        </p>
+                                    </div>
+                                    <div class="infor_item4">
+                                        <h3>'쇼카페' 소개</h3>
+                                        <p>
+                                            신선한 수제 샌드위치와 달콤한 케이크 등 다양한 베이커리를 즐길 수 있습니다. 또한 그윽한 차와 깊은 맛의 커피를 마실 수 있는 수원SK아트리움만의 공간입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="table_title">
+                                <div class="line"></div>
+                                <h2>위치 안내</h2>
+                            </div>
+                            <div class="map_contents">
+                                <div class="map_wrap">
+                                    <div class="map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.3879203632587!2d126.98436831564115!3d37.3096378798467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5d308d69abcb%3A0xc604c718e9952f7d!2z7IiY7JuQU0vslYTtirjrpqzsm4A!5e0!3m2!1sko!2skr!4v1654777333529!5m2!1sko!2skr" width="1163" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <div class="btn">
+                                        <button>길찾기 <i class="fa-solid fa-location-dot"></i></button>
+                                    </div>
+                                </div>
+                                <div class="bus">
+                                    <h3><i class="fa-solid fa-bus"></i> 대중교통 이용안내</h3>
+                                    <table>
+                                        <tr>
+                                            <th class="width25">출발지</th>
+                                            <th>안내</th>
+                                        </tr>
+                                        <tbody>
+                                            <tr>
+                                                <td>서울 잠실역</td>
+                                                <td>
+                                                    <div class="td_btn">
+                                                        <ul>
+                                                            <li class="left">잠실역 직행버스 1009번 탑승 → 수원SK스카이뷰 정류장 하차 → 도보로 3분 이동</li>
+                                                        </ul>
+                                                        <button>지도로 보기 <i class="fa-solid fa-location-dot"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>서울 사당역</td>
+                                                <td>
+                                                    <div class="td_btn">
+                                                        <ul>
+                                                            <li class="left">사당역 직행버스 7770번 탑승 → 경기도인재개발원 정류장 하차 → 도보 10분 이동</li>
+                                                        </ul>
+                                                        <button>지도로 보기 <i class="fa-solid fa-location-dot"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>서울 강남역</td>
+                                                <td>
+                                                    <div class="td_btn">
+                                                        <ul>
+                                                            <li class="up left">강남역 직행버스 3100번 탑승 → 고천, 의왕시청 정류장 하차 → 육교이동하여 건너편 고천,
+                                                                의왕시청 정류장 이동 → 일반시내버스 301, 65번 환승 → 수원SK스카이뷰정류장 하차</li>
+                                                        </ul>
+                                                        <button>지도로 보기 <i class="fa-solid fa-location-dot"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>수원역<br>(1호선, 분당선)</td>
+                                                <td>
+                                                    <div class="td_btn">
+                                                        <ul>
+                                                            <li class="left">
+                                                                수원역 환승센터 9번 승강장 일반시내버스 42번 탑승 → 정자동 성당 정류장 하차
+                                                            </li>
+                                                            <li class="left">
+                                                                수원역 7번출구(수원역 건너편) 301, 5번 탑승 → 수원SK스카이뷰 정류장 하차
+                                                            </li>
+                                                        </ul>
+                                                        <button>지도로 보기 <i class="fa-solid fa-location-dot"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>수원역<br>(1호선)</td>
+                                                <td>
+                                                    <div class="td_btn">
+                                                        <ul>
+                                                            <li class="left">성균관대역 1번출구 건너편 고용노동부 경기지청 정류장 시내버스 99번 탑승 →
+                                                                수원SK스카이뷰 정류장 하차</li>
+                                                        </ul>
+                                                        <button>지도로 보기 <i class="fa-solid fa-location-dot"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="car">
+                                    <h3><i class="fa-solid fa-car"></i> 자가용 이용안내</h3>
+                                    <table>
+                                        <tr>
+                                            <th class="width25">출발지</th>
+                                            <th>안내</th>
+                                        </tr>
+                                        <tbody>
+                                            <tr>
+                                                <td>수원IC<br>(경부고속도로)</td>
+                                                <td>
+                                                    <div class="td_btn">
+                                                        <ul>
+                                                            <li class="up left">수원TG 수원, 영통방면으로 진출 → 중부대로 6km 직진 → 동수원사거리에서 우회전 후 5km 직진 → 교육원 삼거리에서 이목로 원예연구소(SKC) 방면으로 좌회전 후 350m 직진</li>
+                                                        </ul>
+                                                        <button>지도로 보기 <i class="fa-solid fa-location-dot"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>북수원IC<br>(영동고속도로)</td>
+                                                <td>
+                                                    <div class="td_btn">
+                                                        <ul>
+                                                            <li class="up left">북수원TG 수원방면 진출 → 경수대로 도청, 시청(오산)방면으로 600m 직진 → 교육원 삼거리에서 이목로 원예연구소(SKC) 방면으로 우회전 후 370m 직진</li>
+                                                        </ul>
+                                                        <button>지도로 보기 <i class="fa-solid fa-location-dot"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="parking">
+                                    <h3><i class="fa-solid fa-square-parking"></i> 주차안내</h3>
+                                    <table>
+                                        <tr>
+                                            <th class="width25">지상(야외) 주자창</th>
+                                            <td>120대 (장애인 주차 5대 포함)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>지하 주자창</th>
+                                            <td>150대 (장애인 주차 5대 포함)</td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <th class="width25">이용시간</th>
+                                            <th class="width25">승용(15인승 미만)<br>2.5톤 미만 화물</th>
+                                            <th class="width25">15인승 이상 ~ 25인승<br>2.5톤 ~ 4.5톤 미만 화물</th>
+                                            <th class="width25">25인승 이상 승합<br>4.5톤 이상 화물</th>
+                                        </tr>
+                                        <tbody>
+                                            <tr>
+                                                <td>1시간 ~ 3시간</td>
+                                                <td>1,000원</td>
+                                                <td>2,000원</td>
+                                                <td>3,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3시간 ~ 6시간</td>
+                                                <td>2,000원</td>
+                                                <td>4,000원</td>
+                                                <td>5,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6시간 ~ 9시간</td>
+                                                <td>3,000원</td>
+                                                <td>6,000원</td>
+                                                <td>12,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9시간 ~ 1일</td>
+                                                <td>5,000원</td>
+                                                <td>10,000원</td>
+                                                <td>15,000원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="check">
+                                        <p class="sm">※ 공연 관람차량 : 3시간 기준요금 적용</p>
+                                        <p class="sm">※ 주차요금 징수 근거 : 수원시 주차장 조례 및 시행규칙</p>
+                                        <p class="sm">※ 감면대상</p>
+                                        <ul>
+                                            <li  class="sm">도로교통법에 의한 면제 차량</li>
+                                            <li  class="sm">경형차량, 저공해 자동차 표지 부착 차량: 50%</li>
+                                            <li  class="sm">기타 법령에 의한 면제 차량</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <p>담당부서 : 공연부 / 전화번호 : 031-250-5300</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="today_total">
+            <div class="title">다시 찾고 싶은 수원, 함께 하는 문화예술</div>
+            <div class="today">today <span class="today_count">1,524</span></div>
+            <div class="total">total <span class="total_count">35,215</span></div>
+        </div>
+        <div class="info">
+            <div class="information">
+                <h2>수원문화재단</h2>
+                <p>
+                    문의사항 및 궁금한 점이 있으신 분은 <br>
+                    대표번호를 통해 적극적으로 <br>
+                    문의해주시기 바랍니다.
+                </p>
+            </div>
+            <div class="call">
+                <p>대표번호</p>
+                <h2>031-290-3600</h2>
+                <p>점심시간 : 12:00 ~ 13:00</p>
+                <p>근무시간 : 평일 09:00 ~ 18:00</p>
+            </div>
+            <div class="QA">
+                <p>열린의견 <a href="sub3.html"><i class="fa-solid fa-angle-right"></i></a></p>
+                <h2>Q&A</h2>
+                <p>
+                    열린의견 게시판을 이용해 <br>
+                    문의사항 및 궁금한 점을 남겨주세요.
+                </p>
+            </div>
+        </div>
+        <div class="footernav">
+            <div class="footernavWidth">
+                <ul>
+                    <li><a href="#none">개인정보처리방침</a></li>
+                    <li><a href="#none">이용약관</a></li>
+                    <li><a href="#none">환불규정</a></li>
+                    <li><a href="#none">사이트맵</a></li>
+                </ul>
+                <div class="site site1">
+                    <ul>
+                        <li>
+                            <a href="#none">공연·전시관련<i class="fa-solid fa-angle-up"></i></a>
+                            <ul class="sitelink">
+                                <li><a href="#none">아산문화재단</a></li>
+                                <li><a href="#none">부산문화재단</a></li>
+                                <li><a href="#none">익산문화재단</a></li>
+                                <li><a href="#none">화성시문화재단</a></li>
+                                <li><a href="#none">한국관광공사</a></li>
+                                <li><a href="#none">인천문화재단</a></li>
+                                <li><a href="#none">성남문화재단</a></li>
+                                <li><a href="#none">안산문화예술의전당</a></li>
+                                <li><a href="#none">경기문화재단</a></li>
+                                <li><a href="#none">강원문화재단</a></li>
+                                <li><a href="#none">대구문화재단</a></li>
+                                <li><a href="#none">김해문화재단</a></li>
+                                <li><a href="#none">한국미술협회 수원지부</a></li>
+                                <li><a href="#none">오산문화재단</a></li>
+                                <li><a href="#none">서울문화재단</a></li>
+                                <li><a href="#none">안양문화예술재단</a></li>
+                                <li><a href="#none">의정부예술의전당</a></li>
+                                <li><a href="#none">충북문화재단</a></li>
+                                <li><a href="#none">원주문화재단</a></li>
+                                <li><a href="#none">창원문화재단</a></li>
+                                <li><a href="#none">원주문화재단</a></li>
+                                <li><a href="#none">문화체육관광부</a></li>
+                                <li><a href="#none">고양문화재단</a></li>
+                                <li><a href="#none">부천문화재단</a></li>
+                                <li><a href="#none">전주문화재단</a></li>
+                                <li><a href="#none">용인문화재단</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="site site2">
+                    <ul>
+                        <li>
+                            <a href="#none">유관기관<i class="fa-solid fa-angle-up"></i></a>
+                            <ul class="sitelink">
+                                <li><a href="#none">수원시청</a></li>
+                                <li><a href="#none">권선구청</a></li>
+                                <li><a href="#none">수원시도서관사업소</a></li>
+                                <li><a href="#none">수원화성박물관</a></li>
+                                <li><a href="#none">수원시립예술단</a></li>
+                                <li><a href="#none">수원시청소년재단</a></li>
+                                <li><a href="#none">수원시평생학습관</a></li>
+                                <li><a href="#none">수원미술전시관</a></li>
+                                <li><a href="#none">수원시체육회</a></li>
+                                <li><a href="#none">해주에</a></li>
+                                <li><a href="#none">수원사랑장학재단</a></li>
+                                <li><a href="#none">수원시창업지원센터</a></li>
+                                <li><a href="#none">수원시의회</a></li>
+                                <li><a href="#none">팔달구청</a></li>
+                                <li><a href="#none">수원시박물관사업소</a></li>
+                                <li><a href="#none">수원박물관</a></li>
+                                <li><a href="#none">수원시티투어</a></li>
+                                <li><a href="#none">수원도시공사</a></li>
+                                <li><a href="#none">수원청소년문화센터</a></li>
+                                <li><a href="#none">수원외국어마을</a></li>
+                                <li><a href="#none">수원시종합자원봉사센터</a></li>
+                                <li><a href="#none">수원FC</a></li>
+                                <li><a href="#none">수원시정연구원</a></li>
+                                <li><a href="#none">장안구청</a></li>
+                                <li><a href="#none">영통구청</a></li>
+                                <li><a href="#none">수원시립아이파크미술관</a></li>
+                                <li><a href="#none">수원광교박물관</a></li>
+                                <li><a href="#none">수원예총</a></li>
+                                <li><a href="#none">수원시국제교류센터</a></li>
+                                <li><a href="#none">수원영상미디어센터</a></li>
+                                <li><a href="#none">장안구민회관</a></li>
+                                <li><a href="#none">수원시가족여성회관</a></li>
+                                <li><a href="#none">수원시생활체육회</a></li>
+                                <li><a href="#none">수원iTV</a></li>
+                                <li><a href="#none">수원시여성문화공간 휴</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerinfo">
+            <div class="footerinfoWidth">
+                <div class="f_logo">
+                    <img src="./img/loooooogoooo.png" width="300" height="75" alt="logo">
+                </div>
+                <div class="info_contents">
+                    <p>(16261) 경기도 수원시 팔달구 행궁로 11(남창동) 수원문화재단</p>
+                    <div class="num">
+                        <p>사업자등록번호 : 135-82-15727</p>
+                        <p>대표팩스번호 : 031-290-3520</p>
+                        <p>대표전화번호 : 031-290-3600</p>
+                        <p>대표이메일 : swcf_kr@swcf.or.kr</p>
+                    </div>
+                    <small>COPYRIGTY SUWON CULTURAL FOUNDATION. ALL RIGHT RESERVED.</small>
+                </div>
+                <div class="web">
+                    <img src="./img/WA.png" width="100" alt="weblogo">
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

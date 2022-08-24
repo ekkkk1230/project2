@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수원문화재단</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index_mq.css">
+    <link rel="stylesheet" href="./css/jquery-ui_2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+    <script src="./js/jquery-1.7.2.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/datepicker-ko.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/b51af6ee40.js" crossorigin="anonymous"></script>
+
+    <script>
+        function setCookie(name, value, expiredays){ 
+
+         var todayDate=new Date();
+
+            todayDate.setDate(todayDate.getDate() + expiredays);
+
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toUTCString() + ";"
+            
+        }
+
+        function closeWin(){
+            if(document.notice_form.chkbox.checked){
+                setCookie("popWrap","done",1);
+            }
+            document.all['popWrap'].style.visibility = "hidden";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="popWrap">
+        <div id="popup">
+            <ul>
+                <li>
+                    <img src="./img/pop.jpg" width="400" height="500" alt="화성 야간 개장">
+                </li>
+                <li>
+                    <form action="#" name="notice_form">
+                        <p>
+                            <label>
+                                <input type="checkbox" name="chkbox" value="checkbox"> 오늘 하루 창을 열지 않음
+                            </label>
+                            <a href="javascript:closeWin();">[닫기]</a>
+                        </p>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="container">
+        <header>
+            <div id="top_nav">
+                <div id="top_nav_contents">
+                    <div class="news_wrap">수원뉴스
+                        <ul>
+                            <li><a href="#none">수원시 북수원도서관, 이순원 작가 전시회 개최</a></li>
+                            <li><a href="#none">'포스트 코비드 시대', 우리 아이들 어떻게 키워야 하나?</a></li>
+                            <li><a href="#none">"엄마! 아빠! 우리 숲 속에 가서 놀아요!"</a></li>
+                            <li><a href="#none">이번 주말, 여러분을 '숲속의 파티'로 초대합니다.</a></li>
+                        </ul>
+                    </div>
+                    <div class="link">
+                        <ul>
+                            <li><a href="#none">수원소식</a></li>
+                            <li><a href="#none">응답소</a></li>
+                            <li><a href="#none">정보공개</a></li>
+                            <li><a href="#none">분야별정보</a></li>
+                        </ul>
+                    </div>
+                    <div class="login">
+                        <ul>
+                            <li><a href="sub4.html">로그인&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a href="#none">회원가입</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="logo">
+                <div class="logo_contents">
+                    <div class="logo">
+                        <h1>
+                            <a href="index.html"><img src="./img/logo.png" width="300" height="75" alt="logo"></a>
+                            <span>수원문화재단</span>
+                        </h1>
+                    </div>
+                    <div class="search">
+                        <form>
+                            <input type="text" placeholder="검색어를 입력해주세요.">
+                            <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </form>
+                    </div>
+                    <div class="hidden hamburger">
+                        <div class="line n1"></div>
+                        <div class="line n2"></div>
+                        <div class="line n3"></div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="depth1">
+                    <li><a href="sub1.html">수원화성관광</a>
+                        <div class="sub_bg">
+                            <div class="depth2Wrap img0">
+                                <ul class="depth2">
+                                    <li><a href="sub1.html">관람안내</a></li>
+                                    <li><a href="#none">문화관광해설</a></li>
+                                    <li><a href="#none">수원화성 소개</a></li>
+                                    <li><a href="#none">화성행궁 소개</a></li>
+                                    <li><a href="#none">화령전 소개</a></li>
+                                    <li><a href="#none">화성행궁 야간개장</a></li>
+                                    <li><a href="#none">수원화성 공연·체험</a></li>
+                                    <li><a href="#none">수원호스텔</a></li>
+                                    <li><a href="#none">행궁동 왕의 골목여행</a></li>
+                                    <li><a href="#none">문턱 없는 가이드북</a></li>
+                                    <li><a href="#none">주변명소안내</a></li>
+                                    <li><a href="#none">여행꼭지점카페</a></li>
+                                    <li><a href="#none">TV 속 수원화성</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="sub2.html">축제·행사·교육</a>
+                        <div class="sub_bg">
+                            <div class="depth2Wrap img1">
+                                <ul class="depth2">
+                                    <li><a href="sub2.html">수원화성문화재</a></li>
+                                    <li><a href="#none">정조대왕능행차</a></li>
+                                    <li><a href="#none">세계유산축전</a></li>
+                                    <li><a href="#none">미디어아트쇼</a></li>
+                                    <li><a href="#none">수원문화재야행</a></li>
+                                    <li><a href="#none">수원연극축제</a></li>
+                                    <li><a href="#none">수원재즈페스티벌</a></li>
+                                    <li><a href="#none">행사정보</a></li>
+                                    <li><a href="#none">교육정보</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="sub5.html">문화사업</a>
+                        <div class="sub_bg">
+                            <div class="depth2Wrap img2">
+                                <ul class="depth2">
+                                    <li><a href="sub5.html">문화사업 안내</a></li>
+                                    <li><a href="#none">지원사업 안내</a></li>
+                                    <li><a href="#none">문화도시 수원</a></li>
+                                    <li><a href="#none">문화기부 SSAC</a></li>
+                                    <li><a href="#none">수원문화지도</a></li>
+                                    <li><a href="#none">아트리움 공연정보</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="sub6.html">문화시설</a>
+                        <div class="sub_bg">
+                            <div class="depth2Wrap img3">
+                                <ul class="depth2">
+                                    <li><a href="sub6.html">수원SK아트리움</a></li>
+                                    <li><a href="#none">수원제1야외음악당</a></li>
+                                    <li><a href="#none">수원제2야외음악당</a></li>
+                                    <li><a href="#none">수원전통문화관</a></li>
+                                    <li><a href="#none">한옥기술전시관</a></li>
+                                    <li><a href="#none">화서사랑채</a></li>
+                                    <li><a href="#none">화홍사랑채</a></li>
+                                    <li><a href="#none">무형문화재전수회관</a></li>
+                                    <li><a href="#none">행궁길갤러리</a></li>
+                                    <li><a href="#none">111CM</a></li>
+                                    <li><a href="#none">수원미디어센터</a></li>
+                                    <li><a href="#none">푸른지대창작샘터</a></li>
+                                    <li><a href="#none">지동예술샘터</a></li>
+                                    <li><a href="#none">실험목장 AGIT</a></li>
+                                    <li><a href="#none">슬기샘도서관</a></li>
+                                    <li><a href="#none">지혜샘도서관</a></li>
+                                    <li><a href="#none">바른샘도서관</a></li>
+                                    <li><a href="#none">시설물 대관 안내</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="sub3.html">열린공간</a>
+                        <div class="sub_bg">
+                            <div class="depth2Wrap img4">
+                                <ul class="depth2">
+                                    <li><a href="#none">재단소식</a></li>
+                                    <li><a href="#none">프레스룸</a></li>
+                                    <li><a href="#none">자료실</a></li>
+                                    <li><a href="#none">통합 온라인접수</a></li>
+                                    <li><a href="sub3.html">열린의견</a></li>
+                                    <li><a href="#none">공공데이터개방</a></li>
+                                    <li><a href="#none">경영공시</a></li>
+                                    <li><a href="#none">부패·공익 신고센터</a></li>
+                                    <li><a href="#none">반부패 청렴활동</a></li>
+                                    <li><a href="#none">인인화락웹진</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="sub7.html">재단소개</a>
+                        <div class="sub_bg">
+                            <div class="depth2Wrap img5">
+                                <ul class="depth2">
+                                    <li><a href="sub7.html">인사말</a></li>
+                                    <li><a href="#none">비전 및 경영전략</a></li>
+                                    <li><a href="#none">연혁 및 설립배경</a></li>
+                                    <li><a href="#none">조직 및 담당업무</a></li>
+                                    <li><a href="#none">CI소개</a></li>
+                                    <li><a href="#none">재단 오시는 길</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="m_nav hidden">
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="검색어를 입력해주세요.">
+                        <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </form>
+                </div>
+                <ul class="m_nav_depth1">
+                    <li><a href="#none">수원화성관광</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="m_nav_depth2">
+                            <li><a href="sub1.html">관람안내</a></li>
+                            <li><a href="#none">문화관광해설</a></li>
+                            <li><a href="#none">수원화성 소개</a></li>
+                            <li><a href="#none">화성행궁 소개</a></li>
+                            <li><a href="#none">화령전 소개</a></li>
+                            <li><a href="#none">화성행궁 야간개장</a></li>
+                            <li><a href="#none">수원화성 공연·체험</a></li>
+                            <li><a href="#none">수원호스텔</a></li>
+                            <li><a href="#none">행궁동 왕의 골목여행</a></li>
+                            <li><a href="#none">문턱 없는 가이드북</a></li>
+                            <li><a href="#none">주변명소안내</a></li>
+                            <li><a href="#none">여행꼭지점카페</a></li>
+                            <li><a href="#none">TV 속 수원화성</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">축제·행사·교육</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="m_nav_depth2">
+                            <li><a href="sub2.html">수원화성문화재</a></li>
+                            <li><a href="#none">정조대왕능행차</a></li>
+                            <li><a href="#none">셰계유산축전</a></li>
+                            <li><a href="#none">미디어아트쇼</a></li>
+                            <li><a href="#none">수원문화재야행</a></li>
+                            <li><a href="#none">수원연극축제</a></li>
+                            <li><a href="#none">수원재즈페스티벌</a></li>
+                            <li><a href="#none">행사정보</a></li>
+                            <li><a href="#none">교육정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">문화사업</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="m_nav_depth2">
+                            <li><a href="sub5.html">문화사업 안내</a></li>
+                            <li><a href="#none">지원사업 안내</a></li>
+                            <li><a href="#none">문화도시 수원</a></li>
+                            <li><a href="#none">문화기부 SSAC</a></li>
+                            <li><a href="#none">수원문화지도</a></li>
+                            <li><a href="#none">아트리움 공연정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">문화시설</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="m_nav_depth2">
+                            <li><a href="sub6.html">수원SK아트리움</a></li>
+                            <li><a href="#none">수원제1야외음악당</a></li>
+                            <li><a href="#none">수원제2야외음악당</a></li>
+                            <li><a href="#none">수원전통문화관</a></li>
+                            <li><a href="#none">한옥기술전시관</a></li>
+                            <li><a href="#none">화서사랑채</a></li>
+                            <li><a href="#none">화홍사랑채</a></li>
+                            <li><a href="#none">무형문화재전수회관</a></li>
+                            <li><a href="#none">행궁길갤러리</a></li>
+                            <li><a href="#none">111CM</a></li>
+                            <li><a href="#none">수원미디어센터</a></li>
+                            <li><a href="#none">푸른지대창작샘터</a></li>
+                            <li><a href="#none">지동예술샘터</a></li>
+                            <li><a href="#none">실험목장 AGIT</a></li>
+                            <li><a href="#none">슬기샘도서관</a></li>
+                            <li><a href="#none">지혜샘도서관</a></li>
+                            <li><a href="#none">바른샘도서관</a></li>
+                            <li><a href="#none">시설물 대관 안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">열린공간</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="m_nav_depth2">
+                            <li><a href="#none">재단소식</a></li>
+                            <li><a href="#none">프레스룸</a></li>
+                            <li><a href="#none">자료실</a></li>
+                            <li><a href="#none">통합 온라인접수</a></li>
+                            <li><a href="sub3.html">열린의견</a></li>
+                            <li><a href="#none">공공데이터개방</a></li>
+                            <li><a href="#none">경영공시</a></li>
+                            <li><a href="#none">부패·공익 신고센터</a></li>
+                            <li><a href="#none">반부패 청렴활동</a></li>
+                            <li><a href="#none">인인화락웹진</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">재단소개</a><i class="fa-solid fa-angle-down"></i>
+                        <ul class="m_nav_depth2">
+                            <li><a href="sub7.html">인사말</a></li>
+                            <li><a href="#none">비전 및 경영전략</a></li>
+                            <li><a href="#none">연혁 및 설립배경</a></li>
+                            <li><a href="#none">조직 및 담당업무</a></li>
+                            <li><a href="#none">CI소개</a></li>
+                            <li><a href="#none">재단 오시는 길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h2 class="hidden">content</h2>
+            <article id="banner_board">
+                <div class="slide_Img">
+                    <ul class="slide_Img_wrap">
+                        <li class="visual0"><a href="#none"></a></li>
+                        <li class="visual1"><a href="#none"></a></li>
+                        <li class="visual2"><a href="#none"></a></li>
+                    </ul>
+                    <ul class="btList">
+                        <li class="on"><a href="#none">배너1</a></li>
+                        <li><a href="#none">배너2</a></li>
+                        <li><a href="#none">배너3</a></li>
+                    </ul>
+                </div>
+                <div class="board_bt">
+                    <div class="board">
+                        <div class="board_bg">
+                            <h2>재단소식</h2>
+                            <p>수원문화재단의 이슈와<br>새로운 소식들을 알려드립니다.</p>
+                        </div>
+                        <div class="board_cont">
+                            <ul class="board_tab">
+                                <li class="on"><a href="#none">전체</a></li>
+                                <li><a href="#none">일반공고</a></li>
+                                <li><a href="#none">지원사업공고</a></li>
+                                <li><a href="#none">채용공고</a></li>
+                                <li><a href="#none">입찰공고</a></li>
+                                <li><a href="#none">보도자료</a></li>
+                            </ul>
+                            <div class="board_tab_cont">
+                                <ul class="all">
+                                    <li>
+                                        <span class="red">채용공고</span>
+                                        <a href="#none"><span class="title">2022년 상반기 (재)수원문화재단 직원 공개채용 최종합격자 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.24</span>
+                                    </li>
+                                    <li>
+                                        <span class="orange">보도자료</span>
+                                        <a href="#none"><span class="title">수원문화도시센터, 로컬문화콘텐츠 직거래 장터 '수문장' 개최</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.24</span>
+                                    </li>
+                                    <li>
+                                        <span class="red">채용공고</span>
+                                        <a href="#none"><span class="title">수원문화재단 대체인력(계약직) 인력풀 공개모집 최종합격자 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.24</span>
+                                    </li>
+                                    <li>
+                                        <span class="red">채용공고</span>
+                                        <a href="#none"><span class="title">2022년 (재)수원문화재단 직원(운영직) 공개채용 최종합격자 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.24</span>
+                                    </li>
+                                </ul>
+                                <ul class="general">
+                                    <li>
+                                        <span class="blue">일반공고</span>
+                                        <a href="#none"><span class="title">2022년 정조대왕 능행차 공동재현 제안서 평가위원(후보자) 모집 안내</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.23</span>
+                                    </li>
+                                    <li>
+                                        <span class="blue">일반공고</span>
+                                        <a href="#none"><span class="title">세계유산활용 4개축제, 힐링폴링 수원화성 홍보 대행 용역 제안서 평가위원(후보자) 모집 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.23</span>
+                                    </li>
+                                    <li>
+                                        <span class="blue">일반공고</span>
+                                        <a href="#none"><span class="title">2022 장용영수위의식 출연진 모집 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.19</span>
+                                     </li>
+                                    <li>
+                                        <span class="blue">일반공고</span>
+                                        <a href="#none"><span class="title">2022년 하반기 복합문화공간 일일일커뮤니티(111CM) 주요시설 대관 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.18</span>
+                                    </li>
+                                </ul>
+                                <ul class="support">
+                                    <li>
+                                        <span class="green">지원사업</span>
+                                        <a href="#none"><span class="title">2022년 미디어 콘텐츠 제작 지원 사업 「똑똑 크리에이터」서류심사 결과 안내</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.23</span>
+                                    </li>
+                                    <li>
+                                        <span class="green">지원사업</span>
+                                        <a href="#none"><span class="title">2022년 시민 콘텐츠 제작 활성화 사업 미디어 콘텐츠 제작 「멘토」 모집 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.02</span>
+                                    </li>
+                                    <li>
+                                        <span class="green">지원사업</span>
+                                        <a href="#none"><span class="title">2022 브릿지 예술교육 공모지원사업 선정결과 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.04.19</span>
+                                    </li>
+                                    <li>
+                                        <span class="green">지원사업</span>
+                                        <a href="#none"><span class="title">2022년 미디어 콘텐츠 제작 지원 사업 「똑똑 크리에이터」모집 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.04.19</span>
+                                    </li>
+                                </ul>
+                                <ul class="apply">
+                                    <li>
+                                        <span class="red">채용공고</span>
+                                        <a href="#none"><span class="title">2022년 상반기 (재)수원문화재단 직원 공개채용 최종합격자 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.24</span>
+                                    </li>
+                                    <li>
+                                        <span class="red">채용공고</span>
+                                        <a href="#none"><span class="title">수원문화재단 대체인력(계약직) 인력풀 공개모집 최종합격자 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.24</span>
+                                    </li>
+                                    <li>
+                                        <span class="red">채용공고</span>
+                                        <a href="#none"><span class="title">2022년 (재)수원문화재단 직원(운영직) 공개채용 최종합격자 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.24</span>
+                                    </li>
+                                    <li>
+                                        <span class="red">채용공고</span>
+                                        <a href="#none"><span class="title">(재)수원문화재단 2022년 하반기 기간제 근로자 채용 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.20</span>
+                                    </li>
+                                </ul>
+                                <ul class="bargain">
+                                    <li>
+                                        <span class="grey">입찰공고</span>
+                                        <a href="#none"><span class="title">[2022 정조대왕 능행차 공동재현 대행용역] 협상공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.19</span>
+                                    </li>
+                                    <li>
+                                        <span class="grey">입찰공고</span>
+                                        <a href="#none"><span class="title">[힐링폴링 수원화성 홍보 대행 용역] 협상 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.13</span>
+                                    </li>
+                                    <li>
+                                        <span class="grey">입찰공고</span>
+                                        <a href="#none"><span class="title">수원시 공유재산(장안사랑채 A동 101호) 사용·수익 허가 입찰 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.06</span>
+                                    </li>
+                                    <li>
+                                        <span class="grey">입찰공고</span>
+                                        <a href="#none"><span class="title">[2022 수원연극축제 시스템 설치 및 운영 용역] 2인견적 수의 공고</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.04.28</span>
+                                    </li>
+                                </ul>
+                                <ul class="news">
+                                    <li>
+                                        <span class="orange">보도자료</span>
+                                        <a href="#none"><span class="title">수원문화도시센터, 로컬문화콘텐츠 직거래 장터 '수문장' 개최</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.24</span>
+                                    </li>
+                                    <li>
+                                        <span class="orange">보도자료</span>
+                                        <a href="#none"><span class="title">2022년 문화다양성 활성화&lt;누가 살고 있나요?&gt; 워크숍 진행</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.20</span>
+                                    </li>
+                                    <li>
+                                        <span class="orange">보도자료</span>
+                                        <a href="#none"><span class="title">수원문화재단, 2022 오! 경기 문화도시 포럼 개최</span></a>
+                                        <span class="writer">수원문화재단</span> 
+                                        <span class="date">2022.05.19</span>
+                                    </li>
+                                    <li>
+                                        <span class="orange">보도자료</span>
+                                        <a href="#none"><span class="title">화성행궁 생생문화재 '생생 정조실록' 티켓 오픈</span></a>
+                                        <span class="writer">수원문화재단</span>
+                                        <span class="date">2022.05.18</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bt_wrap">
+                        <div class="slide_bt">
+                            <ul>
+                                <li class="prev">
+                                    <i class="fa-solid fa-arrow-left-long"></i>
+                                    <p>PREV</p>
+                                </li>
+                                <li class="next">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                    <p>NEXT</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="site_button" href="#none"></a>
+                    </div>
+                </div>
+            </article>
+            <article id="calendar">
+                <h2 class="dd">오늘의 문화 행사</h2>
+                <div class="slide_calendar">
+                    <button class="slide_calendar_bt slide_calendar_prev"><i class="fa-solid fa-angle-left"></i></button>
+                    <div class="calendarWrap">
+                        <ul class="week">
+                            <li class="on"><button><span>26</span><span>오늘</span></button></li>
+                            <li><button><span>27</span><span>금</span></button></li>
+                            <li><button><span>28</span><span>토</span></button></li>
+                            <li><button><span>29</span><span>일</span></button></li>
+                            <li><button><span>30</span><span>월</span></button></li>
+                            <li><button><span>31</span><span>화</span></button></li>
+                            <li><button><span>1</span><span>수</span></button></li>
+                            <li class="sm"><button><span>2</span><span>목</span></button></li>
+                            <li class="sm"><button><span>3</span><span>금</span></button></li>
+                            <li class="sm"><button><span>4</span><span>토</span></button></li>
+                            <li class="sm"><button><span>5</span><span>일</span></button></li>
+                            <li class="sm"><button><span>6</span><span>월</span></button></li>
+                            <li class="sm"><button><span>7</span><span>화</span></button></li>
+                            <li class="sm"><button class="border_none"><span>8</span><span>수</span></button></li>
+                        </ul>
+                        <ul class="next_week">
+                            <li><button><span>9</span><span>목</span></button></li>
+                            <li><button><span>10</span><span>금</span></button></li>
+                            <li><button><span>11</span><span>토</span></button></li>
+                            <li><button><span>12</span><span>일</span></button></li>
+                            <li><button><span>13</span><span>월</span></button></li>
+                            <li><button><span>14</span><span>화</span></button></li>
+                            <li><button><span>15</span><span>수</span></button></li>
+                            <li class="sm"><button><span>16</span><span>목</span></button></li>
+                            <li class="sm"><button><span>17</span><span>금</span></button></li>
+                            <li class="sm"><button><span>18</span><span>토</span></button></li>
+                            <li class="sm"><button><span>19</span><span>일</span></button></li>
+                            <li class="sm"><button><span>20</span><span>월</span></button></li>
+                            <li class="sm"><button><span>20</span><span>화</span></button></li>
+                            <li class="sm"><button class="border_none"><span>21</span><span>수</span></button></li>
+                        </ul>
+                    </div>
+                    <button class="slide_calendar_bt slide_calendar_next"><i class="fa-solid fa-angle-right"></i></button>
+                    <div class="calendar_open">
+                        <input type="text" onfocus="this.blur()">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                </div>
+                <div class="slide_culture">
+                    <div class="culture on" id="culture1">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev1"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next1"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide1">
+    							<li><a href="#none"><img src="./img/slideculture1.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture2.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture3.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture4.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture5.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture6.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture7.png" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                    <div class="culture" id="culture2">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev2"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next2"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide2">
+    							<li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                    <div class="culture" id="culture3">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev3"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next3"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide3">
+    							<li><a href="#none"><img src="./img/slideculture1.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture2.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture3.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture4.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture5.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture6.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture7.png" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                    <div class="culture" id="culture4">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev4"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next4"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide4">
+    							<li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                    <div class="culture" id="culture5">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev5"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next5"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide5">
+    							<li><a href="#none"><img src="./img/slideculture1.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture2.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture3.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture4.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture5.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture6.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture7.png" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                    <div class="culture" id="culture6">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev6"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next6"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide6">
+    							<li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                    <div class="culture" id="culture7">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev7"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next7"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide7">
+    							<li><a href="#none"><img src="./img/slideculture1.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture2.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture3.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture4.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture5.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture6.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture7.png" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                    <div class="culture" id="culture8">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev8"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next8"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide8">
+    							<li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                    <div class="culture" id="culture9">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev9"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next9"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide9">
+    							<li><a href="#none"><img src="./img/slideculture1.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture2.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture3.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture4.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture5.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture6.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture7.png" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                    <div class="culture" id="culture10">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev10"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next10"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide10">
+    							<li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                    <div class="culture" id="culture11">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev11"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next11"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide11">
+    							<li><a href="#none"><img src="./img/slideculture1.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture2.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture3.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture4.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture5.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture6.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture7.png" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                    <div class="culture" id="culture12">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev12"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next12"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide12">
+    							<li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                    <div class="culture" id="culture13">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev13"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next13"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide13">
+    							<li><a href="#none"><img src="./img/slideculture1.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture2.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture3.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture4.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture5.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture6.png" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/slideculture7.png" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                    <div class="culture" id="culture14">
+                        <div class="slide_culture_bt_wrap">
+                            <button class="slide_culture_bt slide_culture_prev slide_culture_prev14"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="slide_culture_bt slide_culture_next slide_culture_next14"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>	
+						<div class="slide_wrap">
+						    <ul class="slide14">
+    							<li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg2.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                                <li><a href="#none"><img src="./img/footerbg3.jpg" width="100" height="500" alt="slideculture1"></a></li>
+                            </ul>		
+						</div>
+                    </div>
+
+                </div>
+            </article>
+            <article id="sns">
+                <h2>수원문화재단 SNS</h2>
+                <div class="sns_wrap">
+                    <div class="sns_open">
+                        <div class="suwoncultural">
+                            <div class="sns_contents">
+                                <ul>
+                                    <li class="first ph1">
+                                        <a href="#none"></a>
+                                    </li>
+                                    <li class="ph2">
+                                        <a href="#none"></a>
+                                    </li>
+                                    <li class="ph3">
+                                        <a href="#none"></a>
+                                    </li>
+                                </ul>
+                                <div class="photo_control">
+                                    <div class="photo_number">
+                                        <p class="now">1 / 3</p>
+                                        <p>2 / 3</p>
+                                        <p>3 / 3</p>
+                                    </div>
+                                    <div class="photo_arrow">
+                                        <i class="fa-solid fa-angle-left prev_pt"></i>
+                                        <i class="fa-solid fa-play play_pt"></i>
+                                        <i class="fa-solid fa-pause stop_pt"></i>
+                                        <i class="fa-solid fa-angle-right next_pt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="insta">
+                            <div class="sns_title">
+                                <img src="./img/insta.png" width="50" height="50" alt="insta logo">
+                                <span class="title">instagram</span>
+                            </div>
+                            <div class="sns_contents">
+                                <ul>
+                                    <li>
+                                        <div class="menu menu1"><a href="#none"></a></div>
+                                        <div class="hover">
+                                            <a href="#none">
+                                                <p>'상상하는'수원캠퍼스 <br>모집안내</p>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu menu2"><a href="#none"></a></div>
+                                        <div class="hover">
+                                            <a href="#none">
+                                                <p>오!경기 문화도시 포럼 <br>#경기상상캠퍼스</p>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu menu3"><a href="#none"></a></div>
+                                        <div class="hover">
+                                            <a href="#none">
+                                                <p>#수원화성낭만소풍 <br>로맨틱한 수원화성으로 초대합니다.</p>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="menu menu4"><a href="#none"></a></div>
+                                        <div class="hover">
+                                            <a href="#none">
+                                                <p>화성행궁 야간개장을 특별하게 즐기고 싶다면!<br></p>
+                                                <p>인문학 콘서트 ☆박시백의 생생정조실록☆</p>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li><a href="#none">더보기 +</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="facebook">
+                            <div class="sns_title">
+                                <img src="./img/facebook.png" width="50" height="50" alt="twitter logo">
+                                <span class="title">facebook</span>
+                            </div>
+                            <div class="sns_contents">
+                                <ul>
+                                    <li>
+                                        <div class="box item1">
+                                            <div class="fb_title">
+                                                <a href="#none"><div class="fb_logo"></div></a>
+                                                <div class="fb_title_cont">
+                                                    <a href="#none">수원문화재단</a>
+                                                    <a href="none" class="gray">7시간 전</a>
+                                                </div>
+                                            </div>
+                                            <div class="fb_link">
+                                                <a href="#none" class="blue">#수원문화재단</a>
+                                                <a href="#none" class="blue">#111CM</a>
+                                                <a href="#none" class="blue">#경기시민예술학교</a>
+                                            </div>
+                                           <div class="fb_cont">
+                                                <p>🙌 2022 경기시민예술학교 ‘상상하는’ 수원캠퍼스 &lt; 머무는 교실 : 하루의 백스테이지 &gt; 1기 모집(성인 대상)</p>
+                                                <p>📢 경기문화재단과 수원문화재단이 함께하는 2022 경기시민예술학교 수원캠퍼스가 처음으로 수원시민에게 선보입니다.</p>
+                                                <p>🌿수원캠퍼스의 메인 프로그램인 &lt; 머무는 교실  &gt; 에서는 공예, 사진, 영상, 무용 분야의 4명의 문화예술교육가와 함께 일상에 상상력을 더하고, 예술적 성취를 경험하는 복합 문화예술교육이 진행됩니다.</p>
+                                                <p><a href="#none">https://naver.me/xlKwszj4</a> </p>
+                                                <p>☎️문의 : 문화예술부 111CMTF팀 (031-269-3761)</p>
+                                           </div>
+                                            <div class="fb_link">
+                                                <a href="#none" class="blue">#수원캠퍼스</a>
+                                                <a href="#none" class="blue">#머무는교실</a>
+                                                <a href="#none" class="blue">#성인문화예술교육</a>
+                                            </div>
+                                            <div class="img">
+                                                <div class="small_img">
+                                                    <ul>
+                                                        <li class="sm_img1"></li>
+                                                        <li class="sm_img2"></li>
+                                                        <li class="sm_img3"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#none">더보기 +</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sns_bt">
+                        <ul>
+                            <li class="hidden insta">
+                                <a href="#none">
+                                    <img src="./img/insta.png" width="50" height="50" alt="blog">
+                                    <span class="title">instagram</span>
+                                </a>
+                            </li>
+                            <li class="hidden facebook">
+                                <a href="#none">
+                                    <img src="./img/facebook.png" width="50" height="50" alt="blog">
+                                    <span class="title">facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="./img/youtube.png" width="50" height="50" alt="youtube">
+                                    <span class="title">YouTuBe</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="./img/kakao.png" width="50" height="50" alt="kakao">
+                                    <span class="title">카카오톡채널</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="./img/blog.png" width="50" height="50" alt="blog">
+                                    <span class="title">네이버블로그</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article id="culture_icon">
+                <h2>문화시설바로가기</h2>
+                <ul class="culture_site">
+                    <li>
+                        <div class="icon_pt"><img src="./img/culturelink1.png" width="70" alt="culturelink1"></div>
+                        <ul class="culture_site_list">
+                            <li><a href="#none">수원SK아트리움</a></li>
+                            <li><a href="#none">제1야외음악당</a></li>
+                            <li><a href="#none">제2야외음악당</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="icon_pt"><img src="./img/culturelink2.png" width="80" alt="culturelink2"></div>
+                        <ul class="culture_site_list">
+                            <li><a href="#none">행궁길갤러리</a></li>
+                            <li><a href="#none">무형문화재전수회관</a></li>
+                            <li><a href="#none">수원미디어센터</a></li>
+                            <li><a href="#none">111CM</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="icon_pt"><img src="./img/culturelink3.png" width="90" alt="culturelink3"></div>
+                        <ul class="culture_site_list"> 
+                            <li><a href="#none">수원전통문화관</a></li>
+                            <li><a href="#none">화서사랑채</a></li>
+                            <li><a href="#none">한옥기술전시관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="icon_pt"><img src="./img/culturelink4.png" width="80" alt="culturelink4"></div>
+                        <ul class="culture_site_list">
+                            <li><a href="#none">슬기샘도서관</a></li>
+                            <li><a href="#none">지혜샘도서관</a></li>
+                            <li><a href="#none">바른샘도서관</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <footer>
+            <div class="today_total">
+                <div class="title">다시 찾고 싶은 수원, 함께 하는 문화예술</div>
+                <div class="today"><p>TODAY</p> <span class="today_count">1,524</span></div>
+                <div class="total"><p>TOTAL</p> <span class="total_count">35,215</span></div>
+            </div>
+            <div class="info">
+                <div class="information">
+                    <h2>수원문화재단</h2>
+                    <p>
+                        문의사항 및 궁금한 점이 있으신 분은 <br>
+                        대표번호를 통해 적극적으로 <br>
+                        문의해주시기 바랍니다.
+                    </p>
+                </div>
+                <div class="call">
+                    <p>대표번호</p>
+                    <h2>031-290-3600</h2>
+                    <p>점심시간 : 12:00 ~ 13:00</p>
+                    <p>근무시간 : 평일 09:00 ~ 18:00</p>
+                </div>
+                <div class="QA">
+                    <p>열린의견 <a href="sub3.html"><i class="fa-solid fa-angle-right"></i></a></p>
+                    <h2>Q&A</h2>
+                    <p>
+                        열린의견 게시판을 이용해 <br>
+                        문의사항 및 궁금한 점을 남겨주세요.
+                    </p>
+                </div>
+            </div>
+            <div class="footernav">
+                <div class="footernavWidth">
+                    <ul>
+                        <li><a href="#none">개인정보처리방침</a></li>
+                        <li><a href="#none">이용약관</a></li>
+                        <li><a href="#none">환불규정</a></li>
+                        <li><a href="#none">사이트맵</a></li>
+                    </ul>
+                    <div class="site site1">
+                        <ul>
+                            <li>
+                                <a href="#none">공연·전시관련<i class="fa-solid fa-angle-up"></i></a>
+                                <ul class="sitelink">
+                                    <li><a href="#none">아산문화재단</a></li>
+                                    <li><a href="#none">부산문화재단</a></li>
+                                    <li><a href="#none">익산문화재단</a></li>
+                                    <li><a href="#none">화성시문화재단</a></li>
+                                    <li><a href="#none">한국관광공사</a></li>
+                                    <li><a href="#none">인천문화재단</a></li>
+                                    <li><a href="#none">성남문화재단</a></li>
+                                    <li><a href="#none">안산문화예술의전당</a></li>
+                                    <li><a href="#none">경기문화재단</a></li>
+                                    <li><a href="#none">강원문화재단</a></li>
+                                    <li><a href="#none">대구문화재단</a></li>
+                                    <li><a href="#none">김해문화재단</a></li>
+                                    <li><a href="#none">한국미술협회 수원지부</a></li>
+                                    <li><a href="#none">오산문화재단</a></li>
+                                    <li><a href="#none">서울문화재단</a></li>
+                                    <li><a href="#none">안양문화예술재단</a></li>
+                                    <li><a href="#none">의정부예술의전당</a></li>
+                                    <li><a href="#none">충북문화재단</a></li>
+                                    <li><a href="#none">원주문화재단</a></li>
+                                    <li><a href="#none">창원문화재단</a></li>
+                                    <li><a href="#none">원주문화재단</a></li>
+                                    <li><a href="#none">문화체육관광부</a></li>
+                                    <li><a href="#none">고양문화재단</a></li>
+                                    <li><a href="#none">부천문화재단</a></li>
+                                    <li><a href="#none">전주문화재단</a></li>
+                                    <li><a href="#none">용인문화재단</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site site2">
+                        <ul>
+                            <li>
+                                <a href="#none">유관기관<i class="fa-solid fa-angle-up"></i></a>
+                                <ul class="sitelink">
+                                    <li><a href="#none">수원시청</a></li>
+                                    <li><a href="#none">권선구청</a></li>
+                                    <li><a href="#none">수원시도서관사업소</a></li>
+                                    <li><a href="#none">수원화성박물관</a></li>
+                                    <li><a href="#none">수원시립예술단</a></li>
+                                    <li><a href="#none">수원시청소년재단</a></li>
+                                    <li><a href="#none">수원시평생학습관</a></li>
+                                    <li><a href="#none">수원미술전시관</a></li>
+                                    <li><a href="#none">수원시체육회</a></li>
+                                    <li><a href="#none">해주에</a></li>
+                                    <li><a href="#none">수원사랑장학재단</a></li>
+                                    <li><a href="#none">수원시창업지원센터</a></li>
+                                    <li><a href="#none">수원시의회</a></li>
+                                    <li><a href="#none">팔달구청</a></li>
+                                    <li><a href="#none">수원시박물관사업소</a></li>
+                                    <li><a href="#none">수원박물관</a></li>
+                                    <li><a href="#none">수원시티투어</a></li>
+                                    <li><a href="#none">수원도시공사</a></li>
+                                    <li><a href="#none">수원청소년문화센터</a></li>
+                                    <li><a href="#none">수원외국어마을</a></li>
+                                    <li><a href="#none">수원시종합자원봉사센터</a></li>
+                                    <li><a href="#none">수원FC</a></li>
+                                    <li><a href="#none">수원시정연구원</a></li>
+                                    <li><a href="#none">장안구청</a></li>
+                                    <li><a href="#none">영통구청</a></li>
+                                    <li><a href="#none">수원시립아이파크미술관</a></li>
+                                    <li><a href="#none">수원광교박물관</a></li>
+                                    <li><a href="#none">수원예총</a></li>
+                                    <li><a href="#none">수원시국제교류센터</a></li>
+                                    <li><a href="#none">수원영상미디어센터</a></li>
+                                    <li><a href="#none">장안구민회관</a></li>
+                                    <li><a href="#none">수원시가족여성회관</a></li>
+                                    <li><a href="#none">수원시생활체육회</a></li>
+                                    <li><a href="#none">수원iTV</a></li>
+                                    <li><a href="#none">수원시여성문화공간 휴</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footerinfo">
+                <div class="footerinfoWidth">
+                    <div class="f_logo">
+                        <img src="./img/loooooogoooo.png" width="300" height="75" alt="logo">
+                    </div>
+                    <div class="info_contents">
+                        <p>(16261) 경기도 수원시 팔달구 행궁로 11(남창동) 수원문화재단</p>
+                        <div class="num">
+                            <p>사업자등록번호 : 135-82-15727</p>
+                            <p>대표팩스번호 : 031-290-3520</p>
+                            <p>대표전화번호 : 031-290-3600</p>
+                            <p>대표이메일 : swcf_kr@swcf.or.kr</p>
+                        </div>
+                        <small>COPYRIGTY SUWON CULTURAL FOUNDATION. ALL RIGHT RESERVED.</small>
+                    </div>
+                    <div class="web">
+                        <img src="./img/WA.png" width="100" alt="weblogo">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        cookiedata = document.cookie;
+        if(cookiedata.indexOf("popWrap=done")<0){
+            document.all['popWrap'].style.visibility = "visible";
+        }else{
+            document.all['popWrap'].style.visibility = "hidden";
+        }
+    </script>
+</body>
+
+</html>
